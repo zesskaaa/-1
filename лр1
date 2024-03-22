@@ -1,0 +1,32 @@
+from math import*
+x=2
+y=3
+z=2
+c=z**3 * y**(z**x) + z**3*x*y - e**((x**2)/2)
+print(c)
+ответ 688.6109439010694
+
+
+from math import*
+x=1
+c=sqrt(abs(x**3 - 1)) + 3*sqrt(sin(x)**2) + 1 
+print (c)
+ответ 3.5244129544236893
+
+
+from math import*
+a=2
+b=2
+x=1 
+c=5.7 + (log(x) + tan(log(3*x)))/4*a*b 
+print (c)
+ответ7.658033326061391
+
+
+from math import*
+a=2 
+b=2 
+x=0.5 
+c=(abs(a**2 - b**2) + 4*asin(x))/3*x - 7*a*b 
+print (c)
+ответ -27.650934149601134
