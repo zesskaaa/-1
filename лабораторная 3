@@ -1,0 +1,10 @@
+x = 2
+y = -3
+z = 5 
+
+x_new = x**2 if x > 0 else 1
+y_new = y**2 if y > 0 else 1
+z_new = z**2 if z > 0 else 1
+
+print(f"Исходные значения: x={x}, y={y}, z={z}")
+print(f"Новые значения: x={x_new}, y={y_new}, z={z_new}")
