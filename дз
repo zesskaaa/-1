@@ -1,0 +1,28 @@
+def read_matrix(filename):
+    with open(filename, "r") as file:
+        n, m = map(int, file.readline().split())
+        matrix = [[int(x) for x in file.readline().split()] for _ in range(n)]
+    return matrix
+
+def get_positive_sums(matrix):
+    sums = []
+    for row in matrix:
+        sums.append(sum(filter(lambda x: x > 0, row)))
+    return sums
+
+def get_max_sum_row(sums):
+    max_sum = max(sums)
+    max_sum_index = sums.index(max_sum)
+    return max_sum_index
+
+def print_max_sum_row(matrix, max_sum_index):
+    print(f"Строка с наибольшей суммой положительных элементов: {max_sum_index + 1}")
+    print(matrix[max_sum_index])
+
+
+if __name__ == "__main__":
+    filename = "matrix.txt"
+    matrix = read_matrix(filename)
+    positive_sums = get_positive_sums(matrix)
+    max_sum_index = get_max_sum_row(positive_sums)
+    print_max_sum_row(matrix, max_sum_index)
